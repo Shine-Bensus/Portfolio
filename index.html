@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0"> 
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src = "images/logo.jpg">
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#myWork">My Works</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <image src = "images/bg.jpg" width="400px" height="400px"></image>
+                    <h1>Hi, I'm <span>Shine Bensus R</span></h1><br>
+                    <h2>Studing in SJR College, Bangalore</h2><br>
+                    <h3>Aimimg to be a Android app developer & Game developer</h3><br><br>
+                    <h3></h3>
+                </div>
+            </div>
+        </div>
+
+        <!--     About Section     -->
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <h1 class="title">About Me</h1>
+                    </div>
+                    <div class="about-col-2">
+                        <pre>
+                        <p>My name is Shine Bensus R
+At present I am doing my BCA 3rd year in SJR College,Bangalore
+I finished my school studies in St. Franis De Sales Public School
+I did my PUC in St Joseph's Pre University College
+I like playing basketball and mobile games
+And I am learning how to build apps using Android Studio.</p>
+                        </pre>
+                        <div class="tabs">
+                            <p class="tab active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab" onclick="opentab('education')">Education</p>
+                            <p class="tab" onclick="opentab('courses')">Courses</p>
+                        </div>
+                        <div class="tab-contents skill-tab" id = "skills">
+                            <ul>
+                                <li>C Language</li>
+                                <li>Java</li>
+                                <li>Android Studio</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id = "education">
+                            <ul>
+                                <li><span>School</span><br><br>St Francis De Sales Public Scool, Bangalore<br></li>
+                                <li><span>PUC</span><br><br>St Joseph's Pre University College, Bangalore<br></li>
+                                <li><span>Degree - BCA</span><br><br>SJR College, Bangalore<br></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id = "courses">
+                            <ul>
+                                <li><span>HTML & CSS - Beginner</span><br><br>Completed in Swayam - Self-paced<br></li>
+                                <li><span>Building apps using Android Studio</span><br><br>Ongoing in Udemy<br></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname)
+            {
+                for(tabcontent of tabcontents)
+                {
+                    tabcontent.classList.remove("skill-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("skill-tab");
+            }
+        </script>
+
+        <!--           My Works Section       -->
+        
+        <div id="myWork">
+            <div class="container">
+                <div class="row">
+                    <div class="work-col-1">
+                        <h1 class="work">My Works</h1>
+                    </div>
+                    <div class="work-col-2">
+                        <p>Built FLAMES app Using Android Studio</p>
+                        <video width="700" height="500" controls>
+                            <source src = "video/flames.mp4" type = "video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+</html>
