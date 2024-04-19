@@ -72,6 +72,8 @@ nav ul li a:hover::after
     font-size: 20px;
     box-sizing: border-box;
     border: 5px solid red;
+    width: fit-content;
+    margin: auto;
 }
 .row
 {
@@ -144,6 +146,8 @@ nav ul li a:hover::after
     font-size: 20px;
     box-sizing: border-box;
     border: 5px solid red;
+    width: fit-content;
+    margin: auto;
 }
 .row
 {
